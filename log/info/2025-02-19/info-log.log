@@ -10118,3 +10118,18 @@ public class Enemy {
   - 《Java游戏编程》
 2025-02-19 10:39:56.416 INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
 2025-02-19 10:39:58.509 INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-02-19 11:23:48.694 INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.AppDocTest]: AppDocTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-19 11:23:48.766 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.App for test class org.example.AppDocTest
+2025-02-19 11:23:48.877 INFO  org.springframework.boot.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-02-19 11:23:49.069 INFO  org.example.AppDocTest - Starting AppDocTest using Java 17.0.11 with PID 99747 (started by ppx in /Users/ppx/Documents/zhuzhu/work/java-doc-gen)
+2025-02-19 11:23:49.070 INFO  org.example.AppDocTest - No active profile set, falling back to 1 default profile: "default"
+2025-02-19 11:23:49.636 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2025-02-19 11:23:49.644 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-02-19 11:23:49.645 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-19 11:23:49.645 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-19 11:23:49.680 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-19 11:23:49.680 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 589 ms
+2025-02-19 11:23:50.200 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-02-19 11:23:50.211 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 58146 (http) with context path '/'
+2025-02-19 11:23:50.222 INFO  org.example.AppDocTest - Started AppDocTest in 1.355 seconds (process running for 2.209)
+2025-02-19 11:23:54.066 INFO  org.example.TongYiDocGenerate - content:Java核心技术探索@@@@@@现代Java开发趋势@@@@@@深入理解Spring框架@@@@@@Java并发编程实战@@@@@@微服务架构与Java@@@@@@Java虚拟机调优@@@@@@RESTful API设计与实现@@@@@@Java函数式编程@@@@@@大数据处理中的Java@@@@@@容器化与Java应用@@@@@@Java安全编程@@@@@@DevOps与Java开发@@@@@@Java设计模式精讲@@@@@@前端开发中的Java@@@@@@云计算中的Java技术@@@@@@Java与机器学习@@@@@@Java游戏开发入门@@@@@@企业级Java应用@@@@@@Java持续集成与测试@@@@@@Java与物联网
