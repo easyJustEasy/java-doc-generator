@@ -1,0 +1,128 @@
+2025-02-07 11:34:07.640 DEBUG dev.langchain4j.http.client.log.LoggingHttpClient - HTTP request:
+- method: POST
+- url: http://192.168.1.3/api/chat
+- headers: [Content-Type: application/json]
+- body: {
+  "model" : "qwen2.5:7b",
+  "messages" : [ {
+    "role" : "user",
+    "content" : "Provide 3 short bullet points explaining why Java is awesome"
+  } ],
+  "options" : {
+    "temperature" : 0.8
+  },
+  "stream" : false
+}
+
+2025-02-07 11:34:08.265 DEBUG dev.langchain4j.http.client.log.LoggingHttpClient - HTTP request:
+- method: POST
+- url: http://192.168.1.3/api/chat
+- headers: [Content-Type: application/json]
+- body: {
+  "model" : "qwen2.5:7b",
+  "messages" : [ {
+    "role" : "user",
+    "content" : "Provide 3 short bullet points explaining why Java is awesome"
+  } ],
+  "options" : {
+    "temperature" : 0.8
+  },
+  "stream" : false
+}
+
+2025-02-07 11:34:09.154 DEBUG dev.langchain4j.http.client.log.LoggingHttpClient - HTTP request:
+- method: POST
+- url: http://192.168.1.3/api/chat
+- headers: [Content-Type: application/json]
+- body: {
+  "model" : "qwen2.5:7b",
+  "messages" : [ {
+    "role" : "user",
+    "content" : "Provide 3 short bullet points explaining why Java is awesome"
+  } ],
+  "options" : {
+    "temperature" : 0.8
+  },
+  "stream" : false
+}
+
+2025-02-07 11:36:13.814 DEBUG dev.langchain4j.http.client.log.LoggingHttpClient - HTTP request:
+- method: POST
+- url: http://192.168.1.3:11434/api/chat
+- headers: [Content-Type: application/json]
+- body: {
+  "model" : "qwen2.5:7b",
+  "messages" : [ {
+    "role" : "user",
+    "content" : "Provide 3 short bullet points explaining why Java is awesome"
+  } ],
+  "options" : {
+    "temperature" : 0.8
+  },
+  "stream" : false
+}
+
+2025-02-07 11:36:14.432 DEBUG dev.langchain4j.http.client.log.LoggingHttpClient - HTTP request:
+- method: POST
+- url: http://192.168.1.3:11434/api/chat
+- headers: [Content-Type: application/json]
+- body: {
+  "model" : "qwen2.5:7b",
+  "messages" : [ {
+    "role" : "user",
+    "content" : "Provide 3 short bullet points explaining why Java is awesome"
+  } ],
+  "options" : {
+    "temperature" : 0.8
+  },
+  "stream" : false
+}
+
+2025-02-07 11:36:15.240 DEBUG dev.langchain4j.http.client.log.LoggingHttpClient - HTTP request:
+- method: POST
+- url: http://192.168.1.3:11434/api/chat
+- headers: [Content-Type: application/json]
+- body: {
+  "model" : "qwen2.5:7b",
+  "messages" : [ {
+    "role" : "user",
+    "content" : "Provide 3 short bullet points explaining why Java is awesome"
+  } ],
+  "options" : {
+    "temperature" : 0.8
+  },
+  "stream" : false
+}
+
+2025-02-07 11:48:09.247 DEBUG dev.langchain4j.http.client.log.LoggingHttpClient - HTTP request:
+- method: POST
+- url: http://192.168.1.3:11434/api/chat
+- headers: [Content-Type: application/json]
+- body: {
+  "model" : "deepseek-r1:14b",
+  "messages" : [ {
+    "role" : "user",
+    "content" : "Provide 3 short bullet points explaining why Java is awesome"
+  } ],
+  "options" : {
+    "temperature" : 0.8
+  },
+  "stream" : false
+}
+
+2025-02-07 11:49:09.861 DEBUG dev.langchain4j.http.client.log.LoggingHttpClient - HTTP request:
+- method: POST
+- url: http://192.168.1.3:11434/api/chat
+- headers: [Content-Type: application/json]
+- body: {
+  "model" : "deepseek-r1:14b",
+  "messages" : [ {
+    "role" : "user",
+    "content" : "Provide 3 short bullet points explaining why Java is awesome"
+  } ],
+  "options" : {
+    "temperature" : 0.8
+  },
+  "stream" : false
+}
+

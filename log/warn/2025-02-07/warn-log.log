@@ -1,0 +1,124 @@
+2025-02-07 11:34:07.706 WARN  dev.langchain4j.internal.RetryUtils - Exception was thrown on attempt 1 of 3
+dev.langchain4j.exception.HttpException: 
+	at dev.langchain4j.http.client.jdk.JdkHttpClient.execute(JdkHttpClient.java:47)
+	at dev.langchain4j.http.client.log.LoggingHttpClient.execute(LoggingHttpClient.java:39)
+	at dev.langchain4j.model.ollama.OllamaClient.chat(OllamaClient.java:95)
+	at dev.langchain4j.model.ollama.OllamaChatModel.lambda$doGenerate$0(OllamaChatModel.java:172)
+	at dev.langchain4j.internal.RetryUtils$RetryPolicy.withRetry(RetryUtils.java:192)
+	at dev.langchain4j.internal.RetryUtils.withRetry(RetryUtils.java:229)
+	at dev.langchain4j.model.ollama.OllamaChatModel.doGenerate(OllamaChatModel.java:172)
+	at dev.langchain4j.model.ollama.OllamaChatModel.generate(OllamaChatModel.java:120)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:216)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:202)
+	at org.example.OllamaChatExample.main(OllamaChatExample.java:29)
+2025-02-07 11:34:08.284 WARN  dev.langchain4j.internal.RetryUtils - Exception was thrown on attempt 2 of 3
+dev.langchain4j.exception.HttpException: 
+	at dev.langchain4j.http.client.jdk.JdkHttpClient.execute(JdkHttpClient.java:47)
+	at dev.langchain4j.http.client.log.LoggingHttpClient.execute(LoggingHttpClient.java:39)
+	at dev.langchain4j.model.ollama.OllamaClient.chat(OllamaClient.java:95)
+	at dev.langchain4j.model.ollama.OllamaChatModel.lambda$doGenerate$0(OllamaChatModel.java:172)
+	at dev.langchain4j.internal.RetryUtils$RetryPolicy.withRetry(RetryUtils.java:192)
+	at dev.langchain4j.internal.RetryUtils.withRetry(RetryUtils.java:229)
+	at dev.langchain4j.model.ollama.OllamaChatModel.doGenerate(OllamaChatModel.java:172)
+	at dev.langchain4j.model.ollama.OllamaChatModel.generate(OllamaChatModel.java:120)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:216)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:202)
+	at org.example.OllamaChatExample.main(OllamaChatExample.java:29)
+2025-02-07 11:36:13.867 WARN  dev.langchain4j.internal.RetryUtils - Exception was thrown on attempt 1 of 3
+dev.langchain4j.exception.HttpException: 
+	at dev.langchain4j.http.client.jdk.JdkHttpClient.execute(JdkHttpClient.java:47)
+	at dev.langchain4j.http.client.log.LoggingHttpClient.execute(LoggingHttpClient.java:39)
+	at dev.langchain4j.model.ollama.OllamaClient.chat(OllamaClient.java:95)
+	at dev.langchain4j.model.ollama.OllamaChatModel.lambda$doGenerate$0(OllamaChatModel.java:172)
+	at dev.langchain4j.internal.RetryUtils$RetryPolicy.withRetry(RetryUtils.java:192)
+	at dev.langchain4j.internal.RetryUtils.withRetry(RetryUtils.java:229)
+	at dev.langchain4j.model.ollama.OllamaChatModel.doGenerate(OllamaChatModel.java:172)
+	at dev.langchain4j.model.ollama.OllamaChatModel.generate(OllamaChatModel.java:120)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:216)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:202)
+	at org.example.OllamaChatExample.main(OllamaChatExample.java:29)
+2025-02-07 11:36:14.452 WARN  dev.langchain4j.internal.RetryUtils - Exception was thrown on attempt 2 of 3
+dev.langchain4j.exception.HttpException: 
+	at dev.langchain4j.http.client.jdk.JdkHttpClient.execute(JdkHttpClient.java:47)
+	at dev.langchain4j.http.client.log.LoggingHttpClient.execute(LoggingHttpClient.java:39)
+	at dev.langchain4j.model.ollama.OllamaClient.chat(OllamaClient.java:95)
+	at dev.langchain4j.model.ollama.OllamaChatModel.lambda$doGenerate$0(OllamaChatModel.java:172)
+	at dev.langchain4j.internal.RetryUtils$RetryPolicy.withRetry(RetryUtils.java:192)
+	at dev.langchain4j.internal.RetryUtils.withRetry(RetryUtils.java:229)
+	at dev.langchain4j.model.ollama.OllamaChatModel.doGenerate(OllamaChatModel.java:172)
+	at dev.langchain4j.model.ollama.OllamaChatModel.generate(OllamaChatModel.java:120)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:216)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:202)
+	at org.example.OllamaChatExample.main(OllamaChatExample.java:29)
+2025-02-07 11:49:09.278 WARN  dev.langchain4j.internal.RetryUtils - Exception was thrown on attempt 1 of 3
+java.lang.RuntimeException: java.net.http.HttpTimeoutException: request timed out
+	at dev.langchain4j.http.client.jdk.JdkHttpClient.execute(JdkHttpClient.java:52)
+	at dev.langchain4j.http.client.log.LoggingHttpClient.execute(LoggingHttpClient.java:39)
+	at dev.langchain4j.model.ollama.OllamaClient.chat(OllamaClient.java:95)
+	at dev.langchain4j.model.ollama.OllamaChatModel.lambda$doGenerate$0(OllamaChatModel.java:172)
+	at dev.langchain4j.internal.RetryUtils$RetryPolicy.withRetry(RetryUtils.java:192)
+	at dev.langchain4j.internal.RetryUtils.withRetry(RetryUtils.java:229)
+	at dev.langchain4j.model.ollama.OllamaChatModel.doGenerate(OllamaChatModel.java:172)
+	at dev.langchain4j.model.ollama.OllamaChatModel.generate(OllamaChatModel.java:120)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:216)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:202)
+	at org.example.OllamaChatExample.main(OllamaChatExample.java:29)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:571)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at dev.langchain4j.http.client.jdk.JdkHttpClient.execute(JdkHttpClient.java:44)
+	... 10 common frames omitted
+2025-02-07 11:51:14.289 WARN  dev.langchain4j.internal.RetryUtils - Exception was thrown on attempt 1 of 3
+java.lang.RuntimeException: java.net.http.HttpTimeoutException: request timed out
+	at dev.langchain4j.http.client.jdk.JdkHttpClient.execute(JdkHttpClient.java:52)
+	at dev.langchain4j.http.client.log.LoggingHttpClient.execute(LoggingHttpClient.java:39)
+	at dev.langchain4j.model.ollama.OllamaClient.chat(OllamaClient.java:95)
+	at dev.langchain4j.model.ollama.OllamaChatModel.lambda$doGenerate$0(OllamaChatModel.java:172)
+	at dev.langchain4j.internal.RetryUtils$RetryPolicy.withRetry(RetryUtils.java:192)
+	at dev.langchain4j.internal.RetryUtils.withRetry(RetryUtils.java:229)
+	at dev.langchain4j.model.ollama.OllamaChatModel.doGenerate(OllamaChatModel.java:172)
+	at dev.langchain4j.model.ollama.OllamaChatModel.generate(OllamaChatModel.java:120)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:216)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:202)
+	at org.example.OllamaChatExample.main(OllamaChatExample.java:29)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:571)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at dev.langchain4j.http.client.jdk.JdkHttpClient.execute(JdkHttpClient.java:44)
+	... 10 common frames omitted
+2025-02-07 11:53:57.828 WARN  dev.langchain4j.internal.RetryUtils - Exception was thrown on attempt 1 of 3
+java.lang.RuntimeException: java.net.http.HttpTimeoutException: request timed out
+	at dev.langchain4j.http.client.jdk.JdkHttpClient.execute(JdkHttpClient.java:52)
+	at dev.langchain4j.http.client.log.LoggingHttpClient.execute(LoggingHttpClient.java:39)
+	at dev.langchain4j.model.ollama.OllamaClient.chat(OllamaClient.java:95)
+	at dev.langchain4j.model.ollama.OllamaChatModel.lambda$doGenerate$0(OllamaChatModel.java:172)
+	at dev.langchain4j.internal.RetryUtils$RetryPolicy.withRetry(RetryUtils.java:192)
+	at dev.langchain4j.internal.RetryUtils.withRetry(RetryUtils.java:229)
+	at dev.langchain4j.model.ollama.OllamaChatModel.doGenerate(OllamaChatModel.java:172)
+	at dev.langchain4j.model.ollama.OllamaChatModel.generate(OllamaChatModel.java:120)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:216)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:202)
+	at org.example.OllamaChatExample.main(OllamaChatExample.java:29)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:571)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at dev.langchain4j.http.client.jdk.JdkHttpClient.execute(JdkHttpClient.java:44)
+	... 10 common frames omitted
+2025-02-07 11:54:58.350 WARN  dev.langchain4j.internal.RetryUtils - Exception was thrown on attempt 2 of 3
+java.lang.RuntimeException: java.net.http.HttpTimeoutException: request timed out
+	at dev.langchain4j.http.client.jdk.JdkHttpClient.execute(JdkHttpClient.java:52)
+	at dev.langchain4j.http.client.log.LoggingHttpClient.execute(LoggingHttpClient.java:39)
+	at dev.langchain4j.model.ollama.OllamaClient.chat(OllamaClient.java:95)
+	at dev.langchain4j.model.ollama.OllamaChatModel.lambda$doGenerate$0(OllamaChatModel.java:172)
+	at dev.langchain4j.internal.RetryUtils$RetryPolicy.withRetry(RetryUtils.java:192)
+	at dev.langchain4j.internal.RetryUtils.withRetry(RetryUtils.java:229)
+	at dev.langchain4j.model.ollama.OllamaChatModel.doGenerate(OllamaChatModel.java:172)
+	at dev.langchain4j.model.ollama.OllamaChatModel.generate(OllamaChatModel.java:120)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:216)
+	at dev.langchain4j.model.chat.ChatLanguageModel.generate(ChatLanguageModel.java:202)
+	at org.example.OllamaChatExample.main(OllamaChatExample.java:29)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:571)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at dev.langchain4j.http.client.jdk.JdkHttpClient.execute(JdkHttpClient.java:44)
+	... 10 common frames omitted
