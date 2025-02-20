@@ -11,7 +11,6 @@ import org.springframework.ai.ollama.api.OllamaApi;
 import org.springframework.ai.ollama.api.OllamaOptions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import reactor.core.publisher.Flux;
 
 @Component
 @Slf4j
@@ -38,6 +37,6 @@ public class OllamaDeepSeekTextGenerate implements IDocGenerate {
         ChatResponse response = chatModel.call(promptData);
 
         log.info("response:" + JSONObject.toJSONString(response));
-        return DeepSeekUtil.removeThink(response.getResult().getOutput().getContent());
+        return DeepSeekUtil.removeThink(response.getResult().getOutput().getText());
     }
 }

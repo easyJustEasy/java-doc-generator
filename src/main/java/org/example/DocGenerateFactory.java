@@ -13,6 +13,7 @@ public class DocGenerateFactory {
     public  IDocGenerate docGenerate(DocGenerateType type){
         return switch (type) {
             case OLLAMA_DEEP_SEEK -> context.getBean(OllamaDeepSeekTextGenerate.class);
+            case TONGYI_AGENT -> context.getBean(TongYiAgentGenerate.class);
             default -> context.getBean(TongYiDocGenerate.class);
         };
     }

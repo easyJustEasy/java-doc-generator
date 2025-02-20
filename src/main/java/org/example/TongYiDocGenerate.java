@@ -27,6 +27,7 @@ public class TongYiDocGenerate  implements IDocGenerate{
                     // 若没有配置环境变量，请用百炼API Key将下行替换为：.apiKey("sk-xxx")
                     .apiKey(AppConfig.apiKey())
                     .model("qwen-turbo")
+                    .enableSearch(true)
 //                    .model("deepseek-v3")
                     .temperature(.3F)
                     .messages(Arrays.asList(systemMsg, userMsg))

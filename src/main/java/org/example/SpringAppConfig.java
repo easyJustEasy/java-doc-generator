@@ -1,6 +1,7 @@
 package org.example;
 
 import io.netty.channel.ChannelOption;
+import org.springframework.ai.embedding.EmbeddingModel;
 import org.springframework.ai.ollama.api.OllamaApi;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -37,4 +38,5 @@ public class SpringAppConfig {
     public OllamaApi ollamaApi(){
         return new OllamaApi(ollamaUrl,ollamaRestClientBuilder(),createWebClient());
     }
+
 }

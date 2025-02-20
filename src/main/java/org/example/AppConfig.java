@@ -10,4 +10,12 @@ public class AppConfig {
         }
         return dashscopeApiKey;
     }
+
+    public static String agentId() {
+        String dashscopeApiKey = System.getenv("JAVA_AGENT_ID");
+        if (StrUtil.isBlankIfStr(dashscopeApiKey)) {
+            throw new RuntimeException("JAVA_AGENT_ID为空！请先设置");
+        }
+        return dashscopeApiKey;
+    }
 }
