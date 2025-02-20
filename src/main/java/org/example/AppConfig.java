@@ -18,4 +18,8 @@ public class AppConfig {
         }
         return dashscopeApiKey;
     }
+
+    public static String tempDir() {
+        return  "temp";
+    }
 }
