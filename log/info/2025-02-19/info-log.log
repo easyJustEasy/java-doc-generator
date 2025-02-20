@@ -10133,3 +10133,4 @@ public class Enemy {
 2025-02-19 11:23:50.211 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 58146 (http) with context path '/'
 2025-02-19 11:23:50.222 INFO  org.example.AppDocTest - Started AppDocTest in 1.355 seconds (process running for 2.209)
 2025-02-19 11:23:54.066 INFO  org.example.TongYiDocGenerate - content:Java核心技术探索@@@@@@现代Java开发趋势@@@@@@深入理解Spring框架@@@@@@Java并发编程实战@@@@@@微服务架构与Java@@@@@@Java虚拟机调优@@@@@@RESTful API设计与实现@@@@@@Java函数式编程@@@@@@大数据处理中的Java@@@@@@容器化与Java应用@@@@@@Java安全编程@@@@@@DevOps与Java开发@@@@@@Java设计模式精讲@@@@@@前端开发中的Java@@@@@@云计算中的Java技术@@@@@@Java与机器学习@@@@@@Java游戏开发入门@@@@@@企业级Java应用@@@@@@Java持续集成与测试@@@@@@Java与物联网
+2025-02-19 11:24:16.183 INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
