@@ -6,8 +6,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 @Component
 @Slf4j
@@ -67,9 +72,16 @@ public class AppDocGenerate {
         String system = "请生成" + docNum + "个java技术方向，帮我找一下灵感,我只需要一个标题，不要重复，用@@@@@@隔开";
         String generate = iDocGenerate.generate(DocConsts.titleSystem, system);
         String[] split = generate.split("@@@@@@");
-        return Arrays.stream(split).filter(StrUtil::isNotBlank).map(p -> {
-            DocDTO generate1 = generate(iDocGenerate, p);
-            return new DocWrapper(p, generate1);
+        // 自定义线程池
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        List<CompletableFuture<DocWrapper>> cf = Arrays.stream(split).filter(StrUtil::isNotBlank).map(p -> {
+           return CompletableFuture.supplyAsync(() -> {
+               DocDTO generate1 = generate(iDocGenerate, p);
+               return new DocWrapper(p, generate1);
+           },executorService);
         }).toList();
+        CompletableFuture<Void> combinedFuture = CompletableFuture.allOf(cf.toArray(new CompletableFuture[0]));
+        combinedFuture.get(3, TimeUnit.HOURS);
+        return cf.stream().map(CompletableFuture::join).toList();
     }
 }

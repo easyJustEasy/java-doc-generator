@@ -39,7 +39,7 @@ public class AppDocTest {
     @Test
     public void test3() throws Exception {
 
-        List<DocWrapper> docDTOS = appDocGenerate.batchGenerate(30, DocGenerateType.TONGYI_AGENT);
+        List<DocWrapper> docDTOS = appDocGenerate.batchGenerate(100, DocGenerateType.TONGYI_AGENT);
         for (DocWrapper docDTO : docDTOS) {
             if (docDTO==null||docDTO.getDocDTO()==null|| StrUtil.isBlankIfStr(docDTO.getDocDTO().getContent())) {
                 continue;

@@ -9,6 +9,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
+import java.util.Random;
+
 @Component
 @Slf4j
 public class TongYiDocGenerate  implements IDocGenerate{
@@ -30,6 +32,8 @@ public class TongYiDocGenerate  implements IDocGenerate{
                     .enableSearch(true)
 //                    .model("deepseek-v3")
                     .temperature(.3F)
+                    .seed(new Random().nextInt())
+                    .maxTokens(10000)
                     .messages(Arrays.asList(systemMsg, userMsg))
                     .resultFormat(GenerationParam.ResultFormat.MESSAGE)
                     .build();
