@@ -31,7 +31,7 @@ public class TongYiDocGenerate  implements IDocGenerate{
                     .model("qwen-turbo")
                     .enableSearch(true)
 //                    .model("deepseek-v3")
-                    .temperature(.3F)
+                    .temperature(.85F)
                     .seed(new Random().nextInt())
                     .maxTokens(10000)
                     .messages(Arrays.asList(systemMsg, userMsg))

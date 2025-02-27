@@ -45,6 +45,7 @@ public class AppDocTest {
                 continue;
             }
             FileUtil.writeString(docDTO.getDocDTO().getContent(),FileUtil.touch("temp/"+TitleUtil.sub( docDTO.getTitle()) +".md"), StandardCharsets.UTF_8);
+            log.info("生成成功：{}",docDTO.getTitle());
         }
     }
 }
