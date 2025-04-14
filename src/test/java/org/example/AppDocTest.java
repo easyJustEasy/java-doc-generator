@@ -44,8 +44,7 @@ public class AppDocTest {
     @Test
     public void test3() throws Exception {
         LocalDate date = LocalDate.now();
-        date = date.plusDays(3);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 30; i++) {
             String parent = "temp"+File.separator+date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 
             List<DocWrapper> docDTOS = appDocGenerate.batchGenerate(47, DocGenerateType.TONGYI);
@@ -54,9 +53,10 @@ public class AppDocTest {
                     continue;
                 }
                 FileUtil.writeString(docDTO.getDocDTO().getContent(),FileUtil.touch(parent+File.separator+TitleUtil.sub( docDTO.getTitle()) +".md"), StandardCharsets.UTF_8);
-                date = date.plusDays(1);
+
                 log.info("生成成功：{}",docDTO.getTitle());
             }
+            date = date.plusDays(1);
         }
 
     }
