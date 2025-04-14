@@ -32,8 +32,8 @@ public class TongYiDocGenerate  implements IDocGenerate{
                     .enableSearch(true)
 //                    .model("deepseek-v3")
                     .temperature(.85F)
-                    .seed(new Random().nextInt())
-                    .maxTokens(10000)
+                    .seed(new Random().nextInt(0,Integer.MAX_VALUE))
+                    .maxTokens(8192)
                     .messages(Arrays.asList(systemMsg, userMsg))
                     .resultFormat(GenerationParam.ResultFormat.MESSAGE)
                     .build();

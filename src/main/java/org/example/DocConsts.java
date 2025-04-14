@@ -2,7 +2,7 @@ package org.example;
 
 public class DocConsts {
     public static final String titleSystem = """
-                    生成JAVA相关软件系统的标题，不要重复
+                    生成JAVA技术或者面试相关的标题，不要重复
             """;
 
     public static final String system = """

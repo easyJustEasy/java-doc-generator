@@ -11,8 +11,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.StringUtils;
 import reactor.core.publisher.Flux;
 
+import javax.swing.text.DateFormatter;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
+import java.text.DateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
 import java.util.List;
 
 
@@ -38,14 +43,21 @@ public class AppDocTest {
 
     @Test
     public void test3() throws Exception {
+        LocalDate date = LocalDate.now();
+        date = date.plusDays(3);
+        for (int i = 0; i < 10; i++) {
+            String parent = "temp"+File.separator+date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 
-        List<DocWrapper> docDTOS = appDocGenerate.batchGenerate(100, DocGenerateType.TONGYI_AGENT);
-        for (DocWrapper docDTO : docDTOS) {
-            if (docDTO==null||docDTO.getDocDTO()==null|| StrUtil.isBlankIfStr(docDTO.getDocDTO().getContent())) {
-                continue;
+            List<DocWrapper> docDTOS = appDocGenerate.batchGenerate(47, DocGenerateType.TONGYI);
+            for (DocWrapper docDTO : docDTOS) {
+                if (docDTO==null||docDTO.getDocDTO()==null|| StrUtil.isBlankIfStr(docDTO.getDocDTO().getContent())) {
+                    continue;
+                }
+                FileUtil.writeString(docDTO.getDocDTO().getContent(),FileUtil.touch(parent+File.separator+TitleUtil.sub( docDTO.getTitle()) +".md"), StandardCharsets.UTF_8);
+                date = date.plusDays(1);
+                log.info("生成成功：{}",docDTO.getTitle());
             }
-            FileUtil.writeString(docDTO.getDocDTO().getContent(),FileUtil.touch("temp/"+TitleUtil.sub( docDTO.getTitle()) +".md"), StandardCharsets.UTF_8);
-            log.info("生成成功：{}",docDTO.getTitle());
         }
+
     }
 }

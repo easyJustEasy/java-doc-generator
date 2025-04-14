@@ -69,7 +69,7 @@ public class AppDocGenerate {
         if (iDocGenerate == null) {
             throw new RuntimeException("docGenerateType is not support");
         }
-        String titlePrompt = "请生成" + docNum + "个标题，帮我找一下灵感,我只需要一个标题，不要重复，用@@@@@@隔开";
+        String titlePrompt = "请生成" + docNum + "个标题，帮我找一下灵感,我只需要标题，不要重复，用@@@@@@隔开";
         String generate = iDocGenerate.generate(DocConsts.titleSystem, titlePrompt);
         String[] split = generate.split("@@@@@@");
         // 自定义线程池
