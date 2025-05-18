@@ -21,7 +21,7 @@ import java.time.format.DateTimeFormatterBuilder;
 import java.util.List;
 
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = App.class)
 @Slf4j
 public class AppDocTest {
     @Autowired
