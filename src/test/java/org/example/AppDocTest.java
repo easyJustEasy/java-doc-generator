@@ -44,8 +44,8 @@ public class AppDocTest {
     @Test
     public void test3() throws Exception {
         LocalDate date = LocalDate.now();
-        for (int i = 0; i < 30; i++) {
-            String parent = "temp"+File.separator+date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        for (int i = 0; i < 300; i++) {
+            String parent = "E:\\java-article"+File.separator+date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 
             List<DocWrapper> docDTOS = appDocGenerate.batchGenerate(47, DocGenerateType.TONGYI);
             for (DocWrapper docDTO : docDTOS) {
